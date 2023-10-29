@@ -3,8 +3,6 @@ import 'package:dogs/features/widget/box_spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/constant/colors.dart';
-
 class IntroView extends StatefulWidget {
   const IntroView({Key? key}) : super(key: key);
 
@@ -16,7 +14,7 @@ class _IntroViewState extends State<IntroView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.gradient4 ,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -32,9 +30,9 @@ class _IntroViewState extends State<IntroView> {
                   Text(
                     'DogZone',
                     style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w300,
-                      color: Colors.black
+                      fontSize: 40,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.orange
                     ),
                   ),
                 ],
@@ -58,7 +56,8 @@ class _IntroViewState extends State<IntroView> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.orange,
-                  fontSize: 15,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600
                 ),
               ),
             ),
